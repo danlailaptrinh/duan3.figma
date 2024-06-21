@@ -21,6 +21,14 @@ body {
   max-width: calc(100% - 48px);
 }
 
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 /* control btn */
 .control {
   display: flex;
@@ -503,4 +511,262 @@ a {
   margin-top: 38px;
   display: flex;
   column-gap: 28px;
+}
+/* *******************blog******************** */
+.blog {
+  padding: 85px 0;
+}
+
+.blog__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog__content {
+  width: 40%;
+}
+
+.blog__heading {
+  max-width: 470px;
+}
+
+.blog__more {
+  margin-top: 28px;
+  color: #10375c;
+  font-family: sora;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 156%; /* 155.556% */
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+  display: inline-block;
+}
+
+.blog__control {
+  margin-top: 28px;
+  justify-content: flex-start;
+}
+
+.blog__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+}
+
+.blog-item {
+  max-width: 270px;
+  border-radius: 12px;
+  border: 1px solid #e8ebee;
+  background: #fff;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.blog-item__wrap {
+  overflow: hidden;
+  width: 270px;
+  height: 172px;
+}
+
+.blog-item:hover {
+  box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+  border-color: transparent;
+}
+
+.blog-item:hover .blog-item__thumb {
+  transform: scale(1.1);
+}
+
+.blog-item__thumb {
+  width: 270px;
+  height: 172px;
+  border-radius: 12px 12px 0px 0px;
+  transition: 0.5s;
+}
+
+.blog-item__body {
+  padding: 18px 22px;
+}
+
+.blog-item__heading {
+  color: #10375c;
+  font-weight: 600;
+  line-height: 162.5%; /* 162.5% */
+}
+
+.blog-item__desc {
+  color: #575f66;
+  font-size: 1.4;
+  font-weight: 300;
+  line-height: 1.72; /* 171.429% */
+  margin-top: 10px;
+}
+
+.blog-item__more {
+  display: inline-block;
+  color: #2e80ce;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+.blog-item__more:hover {
+  color: #10375c;
+}
+
+/* ************************* appointment *********************** */
+.appointment {
+  margin-top: 85px;
+}
+
+.Appointment__inner {
+  background: #f6fbff;
+  padding: 100px 178px;
+  text-align: center;
+}
+
+.Appointment__heading::after {
+  content: "";
+  display: block;
+  width: 136px;
+  height: 2px;
+  flex-shrink: 0;
+  background: #2e80ce;
+  margin: 18px auto 0;
+}
+
+.Appointment__desc {
+  width: 617px;
+  margin: 18px auto 0;
+}
+
+.appointment__btn {
+  margin-top: 38px;
+}
+/* ***************** footer ***************** */
+.footer {
+  margin-top: 170px;
+  padding-top: 100px;
+  background: #10375c;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+  column-gap: 78px;
+}
+
+.footer__desc {
+  margin-top: 21px;
+  color: #a9b3bb;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+}
+
+.footer__heading {
+  color: #fff;
+  font-weight: 600;
+  line-height: 175%; /* 175% */
+}
+
+.footer__list {
+  margin: 20px 0 28px;
+}
+
+.footer__link {
+  color: #a9b3bb;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 186%; /* 185.714% */
+  white-space: nowrap;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__item {
+  margin-bottom: 10px;
+}
+
+.footer__social {
+  column-gap: 10px;
+  display: flex;
+  margin: 20px 0 28px;
+}
+
+.footer__social-btn {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #2e80ce;
+  transition: 0.25s;
+}
+
+.footer__social-btn:hover {
+  background: #2e80ce;
+  color: #fff;
+}
+
+.footer-form {
+  display: flex;
+  column-gap: 12px;
+  margin-top: 10px;
+}
+
+.footer-form__input {
+  width: 212px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #406181;
+  background: transparent;
+  outline: none;
+  color: #fff;
+}
+
+.footer-form__input::placeholder {
+  color: #9ca8b1;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 186%; /* 185.714% */
+}
+
+.footer-form__submit {
+  width: 108px;
+  height: 46px;
+  flex-shrink: 0;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86; /* 185.714% */
+  border-radius: 4px;
+  background: #2e80ce;
+  border: transparent;
+  cursor: pointer;
+}
+
+.footer-form__submit:hover {
+  opacity: 0.8;
+}
+
+.footer__copyright {
+  border-top: 1px solid #406181;
+}
+
+.footer__copyright-text {
+  color: #aab3ba;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 185%; /* 185.714% */
+  padding: 28px 0 42px;
 }
